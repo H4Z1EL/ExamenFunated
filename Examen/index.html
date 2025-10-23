@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Examen Jeringas</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a top tops</h1>
+        <nav>
+            <a href="#inicio">Tareas</a>
+            <a href="#acercaDe">Acerca de...</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Agregar nuevas tareas</h2>
+            <form id="taskForm">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="date">Fecha límite:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="priority">Prioridad:</label>
+                <select id="priority" name="priority">
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                </select>
+
+                <button type="submit">Añadir tarea</button>
+            </form>
+        </section>
+        <section>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
